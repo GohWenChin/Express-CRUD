@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "38ecaf4c-7633-4780-8393-e588ffb21e21",
+		"name": "Express Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15196807"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "All User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/byId/66fa1707961725b2c64062bc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"byId",
+								"66fa1707961725b2c64062bc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"abc\",\r\n    \"email\": \"abc@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"john_doe\",\r\n    \"email\": \"john@example.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/update/66fa1707961725b2c64062bc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"update",
+								"66fa1707961725b2c64062bc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/66fa3afe37f8f1e46c69542b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"66fa3afe37f8f1e46c69542b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "All Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/profile/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profile",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/profile/byId/66fa49622569bcba0697dd38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profile",
+								"byId",
+								"66fa49622569bcba0697dd38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"66fa54efb3bde1b41ca50d38\",\r\n    \"firstName\": \"a\",\r\n    \"lastName\": \"bc\",\r\n    \"age\" : \"10\",\r\n    \"bio\": \"A software engineer\",\r\n    \"profileImage\": \"https://example.com/abc.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/profile/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profile",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"a\",\r\n    \"lastName\": \"bc\",\r\n    \"age\" : \"15\",\r\n    \"bio\": \"A software engineer\",\r\n    \"profileImage\": \"https://example.com/abc.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/profile/update/66fa5576383121fbe1e24cd8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profile",
+								"update",
+								"66fa5576383121fbe1e24cd8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/profile/66fa5632dc75f041e2a12fdf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profile",
+								"66fa5632dc75f041e2a12fdf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
